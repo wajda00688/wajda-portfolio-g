@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0f0c29;
+  color: #fff;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(20, 20, 40, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+nav h2 {
+  color: #a855f7;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.hero span {
+  color: #c084fc;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  background: #a855f7;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #9333ea;
+  transform: scale(1.05);
+}
+
+/* PROFILE */
+.profile {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #a855f7;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px 20px;
+  margin: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+/* HEADINGS */
+h2 {
+  color: #c084fc;
+  margin-bottom: 15px;
+}
+
+/* SKILLS */
+.bar {
+  background: #333;
+  height: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bar div {
+  height: 10px;
+  background: linear-gradient(90deg, #a855f7, #7e22ce);
+  border-radius: 10px;
+}
+
+/* PROJECT CARDS */
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(168,85,247,0.4);
+}
+
+/* LINKS */
+.card a {
+  color: #c084fc;
+  text-decoration: none;
+}
+
+/* FORM */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px 0;
+}
+
+button {
+  background: #a855f7;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* DARK MODE (optional toggle) */
+.dark {
+  background: #000;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero {
+    padding: 50px 15px;
+  }
+}
